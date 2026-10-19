@@ -1,0 +1,12 @@
+.logo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left:600px;
+}h1 {
+    background-color: #032536;
+    color: white;
+    padding: 25px;
+    margin: 0px;
+    width: 150%;
+}

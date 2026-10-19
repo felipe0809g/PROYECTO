@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ececec;
+    overflow:hidden;
+}
+
+/* HEADER */
+
+.encabezado{
+    height:120px; /* más pequeño */
+    background:#002845;
+    position:relative;
+}
+
+.encabezado::before{
+    content:"";
+    position:absolute;
+    width:120%;
+    height:110px;
+    background:#f7a04c;
+    left:-10%;
+    bottom:-65px;
+    border-radius:50%;
+}
+
+.encabezado::after{
+    content:"";
+    position:absolute;
+    width:120%;
+    height:100px;
+    background:#002845;
+    left:-10%;
+    bottom:-50px;
+    border-radius:50%;
+}
+
+.titulo-area{
+    position:relative;
+    z-index:10;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    padding-top:10px;
+}
+
+h1{
+    color:white;
+    font-size:60px;
+    font-weight:900;
+}
+
+.logo-superior{
+    width:70px;
+    height:70px;
+    background:#082b4d;
+    color:#f5b347;
+    font-size:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.panel-lateral{
+    display:flex;
+    background-color:#002845;
+    width:450px;
+    height:1000px;
+}
+
+.actividades{
+    display:flex;
+    flex-direction:column; 
+    position:relative;
+    justify-content:space-between;
+    width:500px;
+    height:300px;
+    bottom:-70px;
+}
+
+.actividad-btn{
+ border: 7px solid #002845;
+ border-radius:40px;
+ background-color:#f5b347;
+ height:300px;
+
+}

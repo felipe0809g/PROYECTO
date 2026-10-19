@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    background-color: #032536;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+.formulario {
+    background-color: #032536;
+    width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+label {
+    color: #fbb74a;
+    font-size: 20px;
+    display: block;
+    margin: 15px;
+}
+
+input, select {
+    width: 300px;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #fbb74a;
+    border: 0;
+    border-radius: 25px;
+    padding: 12px 45px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.logo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    right:10px;
+}
