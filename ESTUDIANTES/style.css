@@ -1,0 +1,157 @@
+/* Aplica esta regla a todos los elementos de la página */
+* {
+  /* El relleno y el borde cuentan dentro del tamaño del elemento */
+  box-sizing: border-box;
+}
+
+/* Estilos generales de la página */
+body {
+  /* Hace que la página ocupe al menos toda la altura de la pantalla */
+  min-height: 100vh;
+
+  /* Quita el espacio que el navegador agrega alrededor de la página */
+  margin: 0;
+
+  /* Organiza el contenido en una columna */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de la barra o sección del título */
+.top-bar {
+  /* Deja espacio alrededor del contenido */
+  padding: 20px;
+
+  /* Centra el texto */
+  text-align: center;
+}
+
+/* Cuadrícula donde se muestran las materias */
+.materias {
+  /* Ocupa el espacio libre debajo del título */
+  flex: 1;
+
+  /* Muestra las materias en una cuadrícula */
+  display: grid;
+
+  /* Crea cuatro columnas del mismo tamaño */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  /* Reparte el espacio entre las filas */
+  grid-auto-rows: 1fr;
+
+  /* Deja 12 píxeles entre los botones */
+  gap: 12px;
+
+  /* Hace que la cuadrícula ocupe todo el ancho disponible */
+  width: 100%;
+
+  /* Deja espacio dentro de la cuadrícula */
+  padding: 20px;
+}
+
+/* Estilos de los botones */
+button {
+  /* Hace que el botón ocupe todo el ancho disponible */
+  width: 100%;
+
+  /* Le da una altura mínima */
+  min-height: 64px;
+
+  /* Pone el texto en color blanco */
+  color: white;
+
+  /* Define el tamaño del texto */
+  font-size: 1.2rem;
+
+  /* Quita el borde */
+  border: none;
+
+  /* Redondea las esquinas */
+  border-radius: 8px;
+
+  /* Cambia el color de fondo */
+  background-color: #022135;
+}
+
+/* Sección principal que puede llevar una forma decorativa */
+.hero {
+  /* Permite ubicar elementos decorativos dentro de esta sección */
+  position: relative;
+}
+
+/* Forma curva decorativa de la sección principal */
+.hero::before {
+  /* Necesario para mostrar la forma */
+  content: "";
+
+  /* Permite ubicar la forma dentro de la sección */
+  position: absolute;
+
+  /* Coloca la forma un poco debajo de la sección */
+  bottom: -70px;
+
+  /* La mueve un poco hacia la izquierda */
+  left: -5%;
+
+  /* Coloca la forma detrás del título */
+  z-index: 1;
+
+  /* Hace la forma un poco más ancha que la sección */
+  width: 110%;
+
+  /* Define la altura de la forma */
+  height: 170px;
+
+  /* Cambia el color de la forma */
+  background: #002844;
+
+  /* Redondea la forma para crear una curva */
+  border-radius: 50%;
+}
+
+/* Estilos del título dentro de la sección principal */
+.hero h1 {
+  /* Coloca el título delante de la forma curva */
+  position: relative;
+  z-index: 2;
+
+  /* Define el tamaño del título */
+  font-size: 5rem;
+
+  /* Hace que el título se vea más grueso */
+  font-weight: 900;
+
+  /* Deja espacio entre las letras */
+  letter-spacing: 2px;
+}
+
+/* Estilos de la imagen del logo */
+.logo {
+  /* Define el ancho de la imagen */
+  width: 90px;
+
+  /* Mantiene la proporción original de la imagen */
+  height: auto;
+
+  /* Permite ubicar la imagen en una posición fija dentro de su contenedor */
+  position: absolute;
+
+  /* Coloca la imagen a 10 píxeles del borde derecho */
+  right: 10px;
+}
+
+/* Estilos de todos los títulos h1 */
+h1 {
+  /* Cambia el color de fondo */
+  background-color: #032536;
+
+  /* Pone el texto en blanco */
+  color: white;
+
+  /* Deja espacio alrededor del texto */
+  padding: 25px;
+
+  /* Quita el espacio exterior del título */
+  margin: 0;
+}

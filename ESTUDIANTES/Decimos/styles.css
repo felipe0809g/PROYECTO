@@ -1,0 +1,141 @@
+/* Contenedor principal: organiza sus elementos en una fila */
+.contenedor {
+  display: flex;
+
+  /* Distribuye los elementos dejando espacio entre ellos */
+  justify-content: space-between;
+
+  /* Hace que el contenedor mida el 130% del ancho disponible */
+  width: 130%;
+
+  /* Añade 20 px de espacio interior en todos los lados */
+  padding: 20px;
+
+  /* Incluye el padding dentro del ancho total del elemento */
+  box-sizing: border-box;
+}
+
+/* Columnas izquierda y derecha */
+.izquierda,
+.derecha {
+  display: flex;
+
+  /* Coloca los elementos de cada columna uno debajo del otro */
+  flex-direction: column;
+
+  /* Deja 20 px de espacio entre los elementos de la columna */
+  gap: 20px;
+}
+
+/* Estilos generales para todos los botones */
+button {
+  /* Define el ancho y la altura de los botones */
+  width: 130px;
+  height: 100px;
+
+  /* Pone el texto en color blanco */
+  color: white;
+
+  /* Quita el borde predeterminado del navegador */
+  border: none;
+
+  /* Redondea las esquinas del botón */
+  border-radius: 8px;
+}
+
+/* Color de fondo del botón principal */
+.boton-principal {
+  background-color: #022135;
+}
+
+/* Color de fondo de otro botón principal */
+.boton-principal1 {
+  background-color: #022135;
+}
+
+/* Imagen ubicada en el centro */
+.imagen-centro {
+  /* Define el tamaño de la imagen */
+  width: 250px;
+  height: 250px;
+
+  /* Recorta la imagen para llenar el espacio sin deformarla */
+  object-fit: cover;
+}
+
+/* Tamaño del texto de todos los botones */
+button {
+  font-size: 60px;
+}
+
+/* Forma decorativa que aparece antes del contenido de .hero */
+.hero::before {
+  /* Necesario para que se muestre el pseudo-elemento */
+  content: "";
+
+  /* Permite ubicarlo respecto a un contenedor posicionado */
+  position: absolute;
+
+  /* Lo coloca 70 px por debajo del borde inferior de su referencia */
+  bottom: -70px;
+
+  /* Lo desplaza un 5% hacia la izquierda */
+  left: -5%;
+
+  /* Define su ancho y alto */
+  width: 110%;
+  height: 170px;
+
+  /* Le da un fondo azul oscuro */
+  background: #002844;
+
+  /* Redondea el elemento para crear una forma curva */
+  border-radius: 50%;
+
+  /* Controla su orden de superposición */
+  z-index: 1;
+}
+
+/* Estilos para el título dentro de .hero */
+.hero h1 {
+  /* Coloca el título por encima de elementos con z-index menor */
+  z-index: 2;
+
+  /* Define un tamaño grande para el texto */
+  font-size: 5rem;
+
+  /* Hace que el texto aparezca muy grueso */
+  font-weight: 900;
+
+  /* Añade espacio entre las letras */
+  letter-spacing: 2px;
+}
+
+/* Estilos del logo */
+.logo {
+  /* Define el ancho y conserva la proporción original */
+  width: 90px;
+  height: auto;
+
+  /* Permite posicionar el logo con coordenadas */
+  position: absolute;
+
+  /* Lo coloca a 600 px del borde izquierdo de su referencia */
+  left: 630px;
+}
+
+/* Estilos generales para todos los títulos h1 */
+h1 {
+  /* Color de fondo y color del texto */
+  background-color: #032536;
+  color: white;
+
+  /* Espacio interior alrededor del texto */
+  padding: 25px;
+
+  /* Quita el margen exterior predeterminado */
+  margin: 0px;
+
+  /* Hace que el título mida el 150% del ancho disponible */
+  width: 150%;
+}

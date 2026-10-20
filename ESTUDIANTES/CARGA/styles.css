@@ -1,0 +1,113 @@
+•⁠ *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+body{
+background:#ddd;
+display:flex;
+justify-content:center;
+padding:15px;
+}
+.container{
+width:900px;
+background:#fffaf0;
+border-radius:8px;
+overflow:hidden;
+}
+.top-header{
+background:#0a1931;
+color:#ffc93c;
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+border-bottom:4px solid #ffc93c;
+font-weight:bold;
+}
+.user{
+color:#fff;
+font-size:12px;
+}
+main{
+padding:20px;
+text-align:center;
+}
+h1{
+color:#0a1931;
+}
+.grade-badge{
+background:#ffc93c;
+padding:3px 20px;
+border-radius:15px;
+font-weight:bold;
+display:inline-block;
+margin:8px 0 15px;
+}
+.subject-bar{
+background:#0d3b66;
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:10px 15px;
+border-radius:6px;
+font-weight:bold;
+}
+.activities-card{
+background:#fff;
+margin-top:15px;
+border-radius:6px;
+overflow:hidden;
+text-align:left;
+}
+.activities-header{
+background:#0d3b66;
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:10px 15px;
+font-weight:bold;
+font-size:13px;
+}
+.count-badge{
+background:#ffc93c;
+color:#000;
+padding:3px 8px;
+border-radius:10px;
+font-size:10px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+}
+th{
+padding:10px;
+font-size:12px;
+color:#555;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+td{
+padding:10px;
+font-size:12px;
+color:#555;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+.btn-resolver{
+background:#ffc93c;
+border:0;
+padding:5px 10px;
+border-radius:12px;
+font-weight:bold;
+cursor:pointer;
+}
+.bottom-footer{
+background:#0d6e9e;
+border-top:4px solid #ffc93c;
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:12px 20px;
+font-size:12px;
+}
